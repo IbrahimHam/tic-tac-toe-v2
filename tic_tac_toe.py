@@ -33,12 +33,12 @@ def check_winner(board):
         (0, 3, 6), (1, 4, 7), (2, 5, 8), 
         (0, 4, 8), (2, 4, 6)  
     ]
-    tie_combo = ---
     for combo in winning_combinations:
         if board[combo[0]] == board[combo[1]] == board[combo[2]] != ' ':
             return board[combo[0]]
 
-    for 
+    if all(cell != ' ' for cell in board):
+        return 'Tie' 
     return None
 
 def get_valid_move(player, board):
@@ -68,7 +68,10 @@ def main():
         current_move = current_move + 1
         print_board(board)
         winner = check_winner(board)
-        if winner:
+        if winner == 'Tie':
+            print("It's a tie!")
+            return
+        elif winner:
             print(f"Player {winner} wins!")
             return
         player = switch_player(player)
