@@ -61,7 +61,3 @@ Before you start, have a look at the files [program_design.md](program_design.md
 ## Hints
 
 In the ```tic_tac_toe.py``` file you will find the special if-statement ```if __name__ == '__main__':``` if you want to know more about it have a look into the [Example folder](Examples).
-
-
-Today is Monday Have a nice week!
-new message: meeting at 2:00!

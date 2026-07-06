@@ -80,4 +80,3 @@ Short description of a feature from a users point of view. User Stories are very
 
 _As a player, I want to be able to enjoy a game of Tic-Tac-Toe against another player. I want the game to be easy to understand and provide clear instructions for making moves. After each move, I expect to see the updated game board, and I would like to be notified if I win, lose, or if the game ends in a tie._
 
-### NewSS
