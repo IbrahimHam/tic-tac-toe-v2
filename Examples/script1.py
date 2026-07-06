@@ -1,8 +1,11 @@
 print ("Always executed")
 
 def calculate_sum(a, b):
-    return a + b
- 
+    if(a > 0 and b > 0):
+        return a + b
+    else:
+        print("Both numbers must be positive")
+
 if __name__ == "__main__":
     print ("Executed when invoked directly")
     print(calculate_sum(2,2))
